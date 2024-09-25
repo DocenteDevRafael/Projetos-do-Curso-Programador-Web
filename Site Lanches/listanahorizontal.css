@@ -1,0 +1,9 @@
+.lista-horizontal {
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    display: flex; /* Define a lista como um flex container */
+  }
+  
+  .lista-horizontal li {
+    margin-right: 10px; /* Espaçamento entre os itens (opcional) */
+  }
