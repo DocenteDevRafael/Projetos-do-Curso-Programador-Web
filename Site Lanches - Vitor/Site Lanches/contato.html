@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" type="text/css" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img id="logoImg" src="images/logo.png">
+            <h1 id="tituloLogo">André Lanches</h1>
+        </div>
+        <div id="menu">
+            <ul class="listaMenu">
+                <li><a href="sobre.html">André Lanches</a></li>
+                <li><a id="menuAtual" href="index.html">Lanches</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="area">
+        <form id="formulario" autocomplete="off">
+          <fieldset>
+            <legend>Fale conosco</legend>
+            <label>Nome:</label><input class="campo_nome" type="text" placeholder="Digite seu nome"><br>
+
+            <label>Email:</label><input class="campo_email" type="email" placeholder="Digite seu e-mail"><br>
+
+            <label>Telefone:</label><input class="campo_tel" type="tel" required placeholder="(xx) xxxxx-xxxx"><br>
+
+            <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8" placeholder="Como podemos ajudar ?"></textarea><br>
+
+            <button class="btn_submit" onclick="clicou()">Enviar</button>
+            
+          </fieldset>
+        </form>
+
+        <script>
+            function clicou() {
+                window.alert('Mensagem enviada com sucesso! Logo entraremos em contato.')
+            }
+        </script>
+
+      </div>
+
+
+    <div id="entrega">
+        <div id="tel">
+            <a href="tel:1111111111"><h4>(61) 9955-9978</h4></a>
+            <h5>Entregamos na sua casa!</h5>
+        </div>
+        <img src="images/telefone.png"> 
+    </div>
+
+</body>
+</html>
