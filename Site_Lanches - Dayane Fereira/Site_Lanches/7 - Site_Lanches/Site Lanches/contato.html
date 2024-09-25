@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link href="estilo.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <img id="logoImg" src="images/logo.png">
+            <h1 id="tituloLogo">André Lanches</h1>
+        </div>
+        <div id="menu">
+            <ul class="listaMenu">
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a id="menuAtual" href="index.html">Lanches</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div id="area">
+        <form id="formulario" autocomplete="off">
+            <fieldset>
+                <legend>Formulário para Contato</legend>
+                <label>Nome:</label><input class="nome" type="text" placeholder="seu nome"><br><br>
+                <label>Email:</label><input class="email" type="password" placeholder="email@example.com"><br><br>
+                <label>Celular:</label><input class="telefone" type="tel" placeholder="(xx) xxxxx-xxxx"><br><br>
+                <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"
+                    placeholder="Digite aqui a sua mensagem"></textarea><br>
+                <input class="btn_submit" type="submit" value="Enviar" onclick="enviar()">
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        function enviar() {
+            window.alert('Enviado com Sucesso! Responderemos o mais breve possível');
+        }
+    </script>
+    <div id="entrega">
+        <div id="tel">
+            <a href="tel:1111111111">
+                <h4>(61) 9955-9978</h4>
+            </a>
+            <h5>Entregamos na sua casa!</h5>
+        </div>
+        <img src="images/telefone.png">
+    </div>
+</body>
+
+</html>
